@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Quadras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🏐 Reserva de Quadras</h1>
+
+    <div class="quadra">
+        <h2>Quadra de Vôlei</h2>
+        <button onclick="reservar('Vôlei')">Reservar</button>
+    </div>
+
+    <div class="quadra">
+        <h2>Futebol</h2>
+        <button onclick="reservar('Futebol')">Reservar</button>
+    </div>
+
+    <div id="formulario" style="display:none;">
+        <h2>Fazer Reserva</h2>
+        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="time" id="hora">
+        <button onclick="confirmar()">Confirmar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
